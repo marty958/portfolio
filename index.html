@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -11,30 +14,52 @@
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Misaki Sakashita</title>
+        <!-- Import jQuery -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+        <!-- smooth scroll -->
+        <script>
+        $(function(){
+           // #で始まるアンカーをクリックした場合に処理
+           $('a[href^=#]').click(function() {
+              // スクロールの速度
+              var speed = 400; // ミリ秒
+              // アンカーの値取得
+              var href= $(this).attr("href");
+              // 移動先を取得
+              var target = $(href == "#" || href == "" ? 'html' : href);
+              // 移動先を数値で取得
+              var position = target.offset().top;
+              // スムーススクロール
+              $('body,html').animate({scrollTop:position}, speed, 'swing');
+              return false;
+           });
+        });
+        </script>
     </head>
     <body>
-        <nav class="nav-center light-green darken-4">
+        <nav class="nav-center deep-orange">
             <ul>
-                <li class="tab"><a href="badges.html">RESEARCH</a></li>
-                <li class="tab"><a href="collapsible.html">ENGINEERING</a></li>
+                <li class="tab"><a href="#research">RESEARCH</a></li>
+                <li class="tab"><a href="#engineering">ENGINEERING</a></li>
                 <!-- <li class="tab"><a href="collapsible.html">DESIGN</a></li> -->
-                <li class="tab"><a href="collapsible.html">ILLUSTRATION</a></li>
+                <li class="tab"><a href="#illustration">ILLUSTRATION</a></li>
             </ul>
         </nav>
         <div class="container">
             <h1>Misaki Sakashita</h1>
             <p>Ph.D student of Pattern Formation Laboratory, Osaka Univ.</p>
-            <div>
+            <!-- <div> -->
                 <img class="header-icon" src="./images/header.png" width=40% alt="face image"/>
-            </div>
+            <!-- </div> -->
 
             <div class="fixed-action-btn">
-                <a class="btn-floating btn-large red waves-effect waves-light">
+                <a href="#links" class="btn-floating btn-large deep-orange waves-effect waves-light">
                     <i class="fas fa-link"></i>
                 </a>
             </div>
 
-            <h2>RESEARCH</h2>
+            <h2 id="research">RESEARCH</h2>
             <h3>Publication</h3>
             <p>Misaki Sakashita, Tsuguo Kondoh, Atsushi Kawamoto, Emmanuel Tromme, Shigeru Kondo. 2018.<br><a href="https://www.asim-gi.org/publikationen/asim-pub-detail/news/biologically-inspired-topology-optimization-model-with-a-local-density-penalization/?tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=822c982dd21c79c0af7aadeb0d2defef">"Biologically Inspired Topology Optimization Model with a Local Density Penalization."</a><br> MATHMOD 2018 Extended Abstract Volume​, ARGESIM Publisher, ARGESIM Report 55, pp59–60.</p>
             <!-- <h3>Book</h3> -->
@@ -48,10 +73,10 @@
             <p>Misaki Sakashita, Tsuguo Kondoh, Atsushi Kawamoto, Emmanuel Tromme, Mao Sato, Shigeru Kondo, “Modeling the force-associated morphogenesis of fish vertebra”, CREST「生命動態の理解と制御のための基盤技術の創出」第6回領域会議、OIST、2017年11月（ポスター）</p>
             <h3>Other Presentation</h3>
             <p>生物学とプログラミング、第3回CAMPHOR-×KMC合同LT大会、2017年10月（口頭）</p>
-            <h2>ENGINEERING</h2>
+            <h2 id="engineering">ENGINEERING</h2>
             <h3>Products</h3>
             <div class="row">
-                <div class="col s4">
+                <div class="col s12 m4 l4 xl4">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">instant translation</span>
@@ -63,11 +88,11 @@
                             <p>2017</p>
                         </div>
                         <div class="card-action">
-                            <a class="btn grey waves-effect z-depth-0" href="https://github.com/marty958/instant-translation">MORE</a>
+                            <a class="btn grey waves-effect waves-light z-depth-0" href="https://github.com/marty958/instant-translation">MORE</a>
                         </div>
                     </div>
                 </div>
-                <div class="col s4">
+                <div class="col s12 m4 l4 xl4">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">Pattern Formation Lab. website</span>
@@ -79,11 +104,11 @@
                             <p>2017</p>
                         </div>
                         <div class="card-action">
-                            <a class="btn grey waves-effect z-depth-0" href="http://www.fbs.osaka-u.ac.jp/labs/skondo/">MORE</a>
+                            <a class="btn grey waves-effect waves-light z-depth-0" href="http://www.fbs.osaka-u.ac.jp/labs/skondo/">MORE</a>
                         </div>
                     </div>
                 </div>
-                <div class="col s4">
+                <div class="col s12 m4 l4 xl4">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">DLA model</span>
@@ -95,13 +120,11 @@
                             <p>2017</p>
                         </div>
                         <div class="card-action">
-                            <a class="btn grey waves-effect z-depth-0" href="#">MORE</a>
+                            <a class="btn grey waves-effect waves-light z-depth-0" href="#">MORE</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col s4">
+                <div class="col s12 m4 l4 xl4">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">Twitter bot</span>
@@ -113,7 +136,7 @@
                             <p>2016</p>
                         </div>
                         <div class="card-action">
-                            <a class="btn grey waves-effect z-depth-0" href="#">MORE</a>
+                            <a class="btn grey waves-effect waves-light z-depth-0" href="#">MORE</a>
                         </div>
                     </div>
                 </div>
@@ -123,10 +146,10 @@
             <p><a href="http://robotscool.com/jp/">ROBOTSCOOL JAPAN</a>, chief teacher, March 2013 - March 2016</p>
             <!-- <h2>DESIGN</h2> -->
             <!-- <h3>Product</h3> -->
-            <h2>ILLUSTRATION</h2>
+            <h2 id="illustration">ILLUSTRATION</h2>
             <h3>Products</h3>
             <div class="row">
-                <div class="col s4">
+                <div class="col s12 m4 l4 xl4">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">大阪大学全学教育推進機構のイメージキャラクター</span>
@@ -138,11 +161,11 @@
                             <p>2016 - Current</p>
                         </div>
                         <div class="card-action">
-                            <a class="btn grey waves-effect z-depth-0" href="http://www.celas.osaka-u.ac.jp/copyright/">MORE</a>
+                            <a class="btn grey waves-effect waves-light z-depth-0" href="http://www.celas.osaka-u.ac.jp/copyright/">MORE</a>
                         </div>
                     </div>
                 </div>
-                <div class="col s4">
+                <div class="col s12 m4 l4 xl4">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">LINEスタンプ ミサラビット</span>
@@ -154,28 +177,28 @@
                             <p>2015 - Current</p>
                         </div>
                         <div class="card-action">
-                            <a class="btn grey waves-effect z-depth-0" href="https://store.line.me/stickershop/product/1245773/ja">MORE</a>
+                            <a class="btn grey waves-effect waves-light z-depth-0" href="https://store.line.me/stickershop/product/1245773/ja">MORE</a>
                         </div>
                     </div>
                 </div>
-                <div class="col s4">
+                <div class="col s12 m4 l4 xl4">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">大阪大学混声合唱フロイントコール 新歓CDジャケット</span>
                         </div>
                         <div class="image-container">
-                            <img src="images/Noimage.png">
+                            <img src="images/cdjacket.jpg">
                         </div>
                         <div class="card-content">
                             <p>2013 - Current</p>
                         </div>
                         <div class="card-action">
-                            <a class="btn grey waves-effect z-depth-0" href="http://sound.jp/freund/index.html">MORE</a>
+                            <a class="btn grey waves-effect waves-light z-depth-0" href="http://sound.jp/freund/index.html">MORE</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <h2>LINKS</h2>
+            <h2 id="links">LINKS</h2>
             <h3>Contact me:)</h3>
             <div class="icon-container">
                 <a class="btn-floating btn-large waves-effect waves-light red" href="mailto:skstmsk.support@gmail.com"><i class="fas fa-envelope"></i></a>

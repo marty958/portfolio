@@ -1,11 +1,8 @@
 body{
     text-align: center;
     font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", Verdana, "メイリオ", "M+ 1p", sans-serif;
 }
-
-/* p{
-    margin: 0 10px;
-} */
 
 nav.nav-center ul{
     text-align: center;
