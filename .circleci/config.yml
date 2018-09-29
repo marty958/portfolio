@@ -8,5 +8,5 @@ jobs:
                 name: install firebase-tools
                 command: npm install -g firebase-tools
             - run:
-                commands:
+                command:
                   - firebase deploy --project "$FIREBASE_PJ" --token "$FIREBASE_TOKEN"
