@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+- color: red
+  font: fas fa-envelope
+  link: mailto:sakashitamsk@gmail.com
+
+- color: light-blue
+  font: fab fa-twitter fa-2x
+  link: https://twitter.com/marty1martie
+
+- color: indigo
+  font: fab fa-facebook fa-2x
+  link: https://www.facebook.com/misaki.sakashita.129?ref=bookmarks
+
+- color: orange darken-2
+  font: fas fa-rss fa-2x
+  link: http://skstmrty.hatenablog.com/
+
+- color: grey darken-4
+  font: fab fa-github fa-2x
+  link: https://github.com/marty958
+
+- color: light-blue darken-3
+  font: fab fa-slideshare fa-2x
+  link: https://www.slideshare.net/skstmsk?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview
+
+- color: teal accent-4
+  font: fab fa-researchgate
+  link: https://www.researchgate.net/profile/Misaki_Sakashita
+
+# - color:
+#   font:
+#   link:

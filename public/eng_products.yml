@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+- name: instant translation
+  url: https://github.com/marty958/instant-translation
+  image: images/instant-translation.png
+  description: Command line tool translates a single word or sentence between Japanese and English. Made by Python in 2017.
+
+- name: Lab. of Pattern Formation website
+  url: http://www.fbs.osaka-u.ac.jp/labs/skondo/
+  image: images/lab_website.png
+  description: Website of Lab. of Pattern Formation, Osaka Univ. Made by HTML5/CSS3 (Bootstrap) in 2017.
+
+- name: DLA model
+  url: http://skstmrty.hatenablog.com/entry/make-dla
+  image: images/dla.png
+  description: Diffusion-limited aggregation (DLA) model is a mathematical model that makes a branched pattern. Made by Processing in 2017.
+
+- name: Twitter bot
+  url: http://skstmrty.hatenablog.com/entry/make-twitter-bot
+  image: images/Noimage.png
+  description: Twitter bot tweets my music playlists. Made by Python in 2016.
