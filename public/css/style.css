@@ -32,6 +32,10 @@ footer{
     margin: 20px 0;
     text-align: center;
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
 /* .icon-container i{
     margin: 10px;
 } */
