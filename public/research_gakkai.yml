@@ -1,4 +1,13 @@
 # -*- coding: utf-8 -*-
+# - info: 坂下美咲，“”，計算工学講演会，，2019年5月
+#   style: 口頭
+
+- info: Misaki Sakashita，“Pattern Formation in 2D/3DMathematical modeling of the formation of fish vertebrae (魚類椎骨の形態形成の数理モデル化)”，FBS Retreat 2019，淡路夢舞台，2019年5月
+  style: ポスター
+
+- info: Misaki Sakashita，“Pattern Formation in 2D/3D (2次元・3次元のパターン形成)”，FBS Retreat 2019，淡路夢舞台，2019年5月
+  style: 口頭，英語
+
 - info: 坂下美咲，近藤継男，川本敦史，山﨑慎太郎，矢地謙太郎，Emmanuel Tromme，佐藤真央，近藤滋，“トポロジー最適化を用いて魚類椎骨の形態を再現する数理モデルの構築”，日本機械学会第28回設計工学・システム部門講演会，2315，読谷村文化センター，2018年11月
   style: 口頭
 

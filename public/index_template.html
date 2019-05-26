@@ -54,7 +54,7 @@
         </nav>
         <div class="container">
             <h1>Misaki Sakashita</h1>
-            <p>Ph.D student of Pattern Formation Laboratory, Osaka Univ.</p>
+            <p>Ph.D student of Laboratory of Pattern Formation, Osaka Univ.</p>
             <img class="header-icon" src="./images/header.png" width=40% alt="face image"/>
             <div class="fixed-action-btn">
                 <a href="#links" class="btn-floating btn-large deep-orange waves-effect waves-light js-trigger" data-mt-duration="300">
@@ -63,8 +63,9 @@
             </div>
             <h2 id="research">RESEARCH</h2>
             <h3>Education</h3>
-            <p>Pattern Formation Laboratory(Apr.2016-Mar.2018)</p>
-            <p>Fujimoto Laboratory(Apr.2012-Mar.2016)</p>
+            <p>JSPS DC2（日本学術振興会特別研究員DC2）, April 2019 - March 2021<p>
+            <p>Laboratory of Pattern Formation (Kondo Lab), Osaka Univ.（大阪大学大学院生命機能研究科パターン形成研究室）, April 2016 - Current</p>
+            <p>Fujimoto Lab, Osaka Univ.（大阪大学理学部理論生物学研究室）, April 2012 - March 2016</p>
             <h3>Publication</h3>
             {% for paper in research_pub_list %}
             <p>{{ paper.author }} ({{ paper.year }}) <br><a href="{{ paper.link }}">{{ paper.title }}</a><br>{{ paper.journal }}</p>

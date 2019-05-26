@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+- name: Fish vertebrae exhibition
+  url: https://fish-vertebrae-exhibition.firebaseapp.com/
+  image: images/fish_vertebrae_exhibition.png
+  description: Web application showing the 3D mesh of the vertebral body of teleost fish. Made using WebGL in 2019.
+
 - name: instant translation
   url: https://github.com/marty958/instant-translation
   image: images/instant-translation.png

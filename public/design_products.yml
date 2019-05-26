@@ -1,8 +1,23 @@
 # -*- coding: utf-8 -*-
+- name: CAMPHOR- 追いコンマグカップ
+  url: https://camph.net/ #./CAMPHORMug.html
+  image: images/camphor_mag.jpg
+  description: Mag for the graduates of CAMPHOR-. Made by Affinity Designer in 2019.
+
 - name: パターン形成研究室のノベルティグッズ
   url: ./LabsNovelty.html
   image: images/PFLpattern.png
   description: Items with the research subject (animal skin pattern) of Lab. of Pattern Formation. Made by Affinity Designer in 2019.
+
+- name: New Year Card 2019
+  url: .
+  image: images/newyearcard2019.png
+  description: An illustration for New Year's Day in 2019. Made by Affinity Designer in 2019.
+
+- name: CAMPHOR- もくもく会ロゴ
+  url: https://camphor.connpass.com/
+  image: images/mokumoku.png
+  description: Logotype for the event "もくもく会" by CAMPHOR-. Made by Affinity Designer in 2018.
 
 - name: 大阪大学全学教育推進機構のイメージキャラクター
   url: http://www.celas.osaka-u.ac.jp/copyright/
