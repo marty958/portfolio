@@ -5,7 +5,7 @@ import yaml
 env = Environment(loader=FileSystemLoader('.'))
 template = env.get_template('index_template.html')
 
-heading_list = ['RESEARCH', 'ENGINEERING', 'ILLUSTRATION']
+heading_list = ['research', 'engineering', 'illustration']
 
 with open('research_pub.yml') as f:
     research_pub_list = yaml.load(f)
