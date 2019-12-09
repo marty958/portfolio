@@ -1,355 +1,382 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--OGP-->
-        <meta property="og:title"       content="Misaki Sakashita">
-        <meta property="og:description" content="Misaki Sakashita（サカシタミサキ）の研究・制作実績をまとめたポートフォリオサイト．">
-        <meta property="og:website"     content="Misaki Sakashita（サカシタミサキ）のポートフォリオサイト．">
-        <meta property="og:url"         content="https://skstmsk-portfolio.firebaseapp.com/">
-        <meta property="og:image"       content="./images/misarabbit_vec.png">
-        <meta name="twitter:card"       content="summary">
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link rel='shortcut icon' href='./images/favicon.ico'/>
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="css/style.css">
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Misaki Sakashita</title>
-        <!-- Import jQuery -->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
-        <!-- smooth scroll -->
-        <script>
-        $(function(){
-           // #で始まるアンカーをクリックした場合に処理
-           $('a[href^=#]').click(function() {
-              // スクロールの速度
-              var speed = 400; // ミリ秒
-              // アンカーの値取得
-              var href= $(this).attr("href");
-              // 移動先を取得
-              var target = $(href == "#" || href == "" ? 'html' : href);
-              // 移動先を数値で取得
-              var position = target.offset().top;
-              // スムーススクロール
-              $('body,html').animate({scrollTop:position}, speed, 'swing');
-              return false;
-           });
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--OGP-->
+    <meta property="og:title" content="Misaki Sakashita">
+    <meta property="og:description" content="Misaki Sakashita（サカシタミサキ）の研究・制作実績をまとめたポートフォリオサイト．">
+    <meta property="og:website" content="Misaki Sakashita（サカシタミサキ）のポートフォリオサイト．">
+    <meta property="og:url" content="https://skstmsk-portfolio.firebaseapp.com/">
+    <meta property="og:image" content="./images/misarabbit_vec.png">
+    <meta name="twitter:card" content="summary">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel='shortcut icon' href='./images/favicon.ico' />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misaki Sakashita</title>
+    <!-- Import jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <!-- smooth scroll -->
+    <script>
+        $(function () {
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function () {
+                // スクロールの速度
+                var speed = 400; // ミリ秒
+                // アンカーの値取得
+                var href = $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top;
+                // スムーススクロール
+                $('body,html').animate({ scrollTop: position }, speed, 'swing');
+                return false;
+            });
         });
-        </script>
-    </head>
-    <body>
-        <nav class="nav-center deep-orange">
-            <ul>
-                
-                <li class="tab"><a href="#research" class="js-trigger" data-mt-duration="300">research</a></li>
-                
-                <li class="tab"><a href="#engineering" class="js-trigger" data-mt-duration="300">engineering</a></li>
-                
-                <li class="tab"><a href="#illustration" class="js-trigger" data-mt-duration="300">illustration</a></li>
-                
-            </ul>
-        </nav>
-        <div class="container">
-            <h1>Misaki Sakashita</h1>
-            <p>Ph.D student of Laboratory of Pattern Formation, Osaka Univ.</p>
-            <img class="header-icon" src="./images/header.png" width=40% alt="face image"/>
-            <div class="fixed-action-btn">
-                <a href="#links" class="btn-floating btn-large deep-orange waves-effect waves-light js-trigger" data-mt-duration="300">
-                    <i class="fas fa-link"></i>
-                </a>
-            </div>
-            <h2 id="research">RESEARCH</h2>
-            <h3>Education</h3>
-            <p>JSPS DC2 (日本学術振興会特別研究員DC2), April 2019 - March 2021<p>
-            <p>Laboratory of Pattern Formation (Kondo Lab), Osaka Univ. <br>(大阪大学大学院生命機能研究科パターン形成研究室), April 2016 - Current<br>My master's thesis: Mathematical modeling to explain the formation of fish vertebra shape based on the structural inspection by micro-CT<br>修士論文：マイクロCTによる構造観察と数理モデルの構築から推定される魚類椎骨の形態形成メカニズム</p>
-            <p>Fujimoto Lab, Osaka Univ. (大阪大学理学部理論生物学研究室), April 2012 - March 2016<br>卒業研究：特徴的な形をした魚群の形成を個体の行動から理解する</p>
-            <h3>Publication</h3>
+    </script>
+</head>
+
+<body>
+    <nav class="nav-center deep-orange">
+        <ul>
             
-            <p>Misaki Sakashita, Mao Sato, Shigeru Kondo (2019) <br><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jmor.20983">Comparative morphological examination of vertebral bodies of teleost fish using high‐resolution micro‐CT scans</a><br>Journal of Morphology, John Wiley & Sons, Inc.</p>
+            <li class="tab"><a href="#research" class="js-trigger" data-mt-duration="300">research</a></li>
             
-            <p>Misaki Sakashita, Tsuguo Kondoh, Atsushi Kawamoto, Emmanuel Tromme, Shigeru Kondo (2018) <br><a href="https://www.asim-gi.org/publikationen/asim-pub-detail/news/biologically-inspired-topology-optimization-model-with-a-local-density-penalization/?tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=822c982dd21c79c0af7aadeb0d2defef">Biologically Inspired Topology Optimization Model with a Local Density Penalization.</a><br>MATHMOD 2018 Extended Abstract Volume​, ARGESIM Publisher, ARGESIM Report 55, pp59–60.</p>
+            <li class="tab"><a href="#engineering" class="js-trigger" data-mt-duration="300">engineering</a></li>
             
-            <h3>Book</h3>
-            <p>坂下美咲，近藤滋，動物学の百科事典第６章動物の発生「生物の形態形成と反応拡散系」, 丸善出版, 2018年9月刊行</p>
-            <h3>Awards</h3>
-            <p>第39回日本骨形態計測学会学術奨励賞</p>
-            <h3>International Conference</h3>
+            <li class="tab"><a href="#illustration" class="js-trigger" data-mt-duration="300">illustration</a></li>
             
-            <p>Misaki Sakashita, Tsuguo Kondoh, Atsushi Kawamoto, Emmanuel Tromme, Mao Sato, Shigeru Kondo, Modelling the force-dependent morphogenesis of fish vertebra with topology optimization, 2018 Annual Meeting of the Society for Mathematical Biology & the Japanese Society for Mathematical Biology, Sydney Australia, July 2018 (Oral)</p>
-            
-            <p>Misaki Sakashita, Tsuguo Kondoh, Atsushi Kawamoto, Emmanuel Tromme, Shigeru Kondo, "Biologically Inspired Topology Optimization Model with a Local Density Penalization", Mathematical Modelling - 9th MATHMOD 2018, ThEPL.30, Vienna Austria, February 2018 (Poster)</p>
-            
-            <h3>Domestic Conference</h3>
-            
-            <p>坂下美咲，佐藤真央，山﨑慎太郎，矢地謙太郎，近藤滋，”魚類椎骨のマイクロCTを用いた観察に基づく形態形成メカニズムの数理モデル化”，第39回骨形態計測学会，Ⅶ-2，北九州国際会議場，2019年7月（口頭）</p>
-            
-            <p>坂下美咲，山﨑慎太郎，矢地謙太郎，近藤滋，“マイクロCTによる構造観察とトポロジー最適化に基づいた魚類椎骨の形態を形成する数理モデル”，計算工学講演会，D-09-03，大宮ソニックシティ，2019年5月（口頭）</p>
-            
-            <p>Misaki Sakashita，“Mathematical modeling of the formation of fish vertebrae (魚類椎骨の形態形成の数理モデル化)”，FBS Retreat 2019，淡路夢舞台，2019年5月（ポスター）</p>
-            
-            <p>Misaki Sakashita，“Pattern Formation in 2D/3D (2次元・3次元のパターン形成)”，FBS Retreat 2019，淡路夢舞台，2019年5月（口頭，英語）</p>
-            
-            <p>坂下美咲，近藤継男，川本敦史，山﨑慎太郎，矢地謙太郎，Emmanuel Tromme，佐藤真央，近藤滋，“トポロジー最適化を用いて魚類椎骨の形態を再現する数理モデルの構築”，日本機械学会第28回設計工学・システム部門講演会，2315，読谷村文化センター，2018年11月（口頭）</p>
-            
-            <p>坂下美咲，佐藤真央，近藤滋，“魚類椎骨のマイクロCTを用いた比較形態観察による形態形成メカニズムの推定”，2018年度日本魚類学会年会，101，国立オリンピック記念青少年総合センター，2018年10月（ポスター）</p>
-            
-            <p>Misaki Sakashita, Tsuguo Kondoh, Atsushi Kawamoto, Emmanuel Tromme, Mao Sato, Shigeru Kondo, “Modeling the force-associated morphogenesis of fish vertebra”, CREST「生命動態の理解と制御のための基盤技術の創出」第6回領域会議，OIST，2017年11月（ポスター）</p>
-            
-            <p>坂下美咲，佐藤真央，近藤滋，“魚類脊椎骨の３次元形態形成の研究”，日本動物学会第88回富山大会，P099，富山県民会館，2017年9月（ポスター）</p>
-            
-            <p>坂下美咲，近藤滋，“魚類の椎骨側部にある梁状構造ができる原理”，第37回日本骨形態計測学会，Ⅵ-1，大阪国際会議場，2017年6月（口頭）</p>
-            
-            <h3>Other Presentation</h3>
-            <p>トポロジー最適化を用いた魚類椎骨の形態再現，藤本研10周年同窓会，2018年11月（口頭）</p>
-            <p>生物学とプログラミング，第3回CAMPHOR-×KMC合同LT大会，2017年10月（口頭）</p>
-            <h2 id="engineering">ENGINEERING</h2>
-            <h3>Products</h3>
-            <div class="row">
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Fish vertebrae exhibition</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/fish_vertebrae_exhibition.png">
-                        </div>
-                        <div class="card-content">
-                            <p>Web application showing the 3D mesh of the vertebral body of teleost fish. Made using WebGL in 2019.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="https://fish-vertebrae-exhibition.firebaseapp.com/">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">instant translation</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/instant-translation.png">
-                        </div>
-                        <div class="card-content">
-                            <p>Command line tool translates a single word or sentence between Japanese and English. Made by Python in 2017.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="https://github.com/marty958/instant-translation">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Lab. of Pattern Formation website</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/lab_website.png">
-                        </div>
-                        <div class="card-content">
-                            <p>Website of Lab. of Pattern Formation, Osaka Univ. Made by HTML5/CSS3 (Bootstrap) in 2017.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="http://www.fbs.osaka-u.ac.jp/labs/skondo/">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">DLA model</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/dla.png">
-                        </div>
-                        <div class="card-content">
-                            <p>Diffusion-limited aggregation (DLA) model is a mathematical model that makes a branched pattern. Made by Processing in 2017.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="http://skstmrty.hatenablog.com/entry/make-dla">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Twitter bot</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/Noimage.png">
-                        </div>
-                        <div class="card-content">
-                            <p>Twitter bot tweets my music playlists. Made by Python in 2016.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="http://skstmrty.hatenablog.com/entry/make-twitter-bot">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <h3>Work Experience</h3>
-            <p><a href="https://www.tytlabs.com/">TOYOTA CENTRAL R&D LABS., INC.</a>, summer internship, August 2017 - September 2017</p>
-            <p><a href="http://robotscool.com/jp/">ROBOTSCOOL JAPAN</a>, chief teacher, March 2013 - March 2016</p>
-            <!-- <h2>DESIGN</h2> -->
-            <!-- <h3>Product</h3> -->
-            <h2 id="illustration">ILLUSTRATION</h2>
-            <h3>Products</h3>
-            <div class="row">
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">CAMPHOR- 追いコンマグカップ</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/camphor_mag.jpg">
-                        </div>
-                        <div class="card-content">
-                            <p>Mag for the graduates of CAMPHOR-. Made by Affinity Designer in 2019.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="https://camph.net/">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">パターン形成研究室のノベルティグッズ</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/PFLpattern.png">
-                        </div>
-                        <div class="card-content">
-                            <p>Items with the research subject (animal skin pattern) of Lab. of Pattern Formation. Made by Affinity Designer in 2019.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="./LabsNovelty.html">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">New Year Card 2019</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/newyearcard2019.png">
-                        </div>
-                        <div class="card-content">
-                            <p>An illustration for New Year's Day in 2019. Made by Affinity Designer in 2019.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href=".">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">CAMPHOR- もくもく会ロゴ</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/mokumoku.png">
-                        </div>
-                        <div class="card-content">
-                            <p>Logotype for the event "もくもく会" by CAMPHOR-. Made by Affinity Designer in 2018.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="https://camphor.connpass.com/">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">大阪大学全学教育推進機構のイメージキャラクター</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/celas-kun-study.png">
-                        </div>
-                        <div class="card-content">
-                            <p>Mascot of the Center for Education in Liberal Arts and Sciences (CELAS) in Osaka Univ. We informally call him "celas-kun (セラスくん)." Made by Photoshop in 2016.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="http://www.celas.osaka-u.ac.jp/copyright/">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">LINEスタンプ ミサラビット</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/misarabbit.png">
-                        </div>
-                        <div class="card-content">
-                            <p>Line stickers of my mascot misarabbit (ミサラビット). Made by Photoshop in 2015. Please buy them!</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="https://store.line.me/stickershop/product/1245773/ja">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col s12 m6 l6 xl6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">大阪大学混声合唱フロイントコール 新歓CDジャケット</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="images/cdjacket.jpg">
-                        </div>
-                        <div class="card-content">
-                            <p>Hand-painted illustration for the cover art of the CD provided in the freshman welcome concert of FreundChor (the chorus club of Osaka Univ. ). Made in 2013.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn grey waves-effect waves-light z-depth-0" href="http://sound.jp/freund/index.html">MORE</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <h2 id="links">LINKS</h2>
-            <h3>Contact me:)</h3>
-            <div class="icon-container">
-                
-                <a class="btn-floating btn-large waves-effect waves-light red" href="mailto:sakashitamsk@gmail.com"><i class="fas fa-envelope"></i></a>
-                
-                <a class="btn-floating btn-large waves-effect waves-light light-blue" href="https://twitter.com/marty1martie"><i class="fab fa-twitter fa-2x"></i></a>
-                
-                <a class="btn-floating btn-large waves-effect waves-light indigo" href="https://www.facebook.com/misaki.sakashita.129?ref=bookmarks"><i class="fab fa-facebook fa-2x"></i></a>
-                
-                <a class="btn-floating btn-large waves-effect waves-light orange darken-2" href="http://skstmrty.hatenablog.com/"><i class="fas fa-rss fa-2x"></i></a>
-                
-                <a class="btn-floating btn-large waves-effect waves-light grey darken-4" href="https://github.com/marty958"><i class="fab fa-github fa-2x"></i></a>
-                
-                <a class="btn-floating btn-large waves-effect waves-light light-blue darken-3" href="https://www.slideshare.net/skstmsk?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview"><i class="fab fa-slideshare fa-2x"></i></a>
-                
-                <a class="btn-floating btn-large waves-effect waves-light teal accent-4" href="https://www.researchgate.net/profile/Misaki_Sakashita"><i class="fab fa-researchgate"></i></a>
-                
-            </div>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Misaki Sakashita</h1>
+        <p>Ph.D student of Laboratory of Pattern Formation, Osaka Univ.</p>
+        <img class="header-icon" src="./images/header.png" width=40% alt="face image" />
+        <div class="fixed-action-btn">
+            <a href="#links" class="btn-floating btn-large deep-orange waves-effect waves-light js-trigger"
+                data-mt-duration="300">
+                <i class="fas fa-link"></i>
+            </a>
         </div>
-        <footer>&copy; 2019 Misaki Sakashita</footer>
-        <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
+        <h2 id="research">RESEARCH</h2>
+        <h3>Education</h3>
+        <p>JSPS DC2 (日本学術振興会特別研究員DC2), April 2019 - March 2021<p>
+                <p>Laboratory of Pattern Formation (Kondo Lab), Osaka Univ. <br>(大阪大学大学院生命機能研究科パターン形成研究室), April 2016 -
+                    Current<br>My master's thesis: Mathematical modeling to explain the formation of fish vertebra shape
+                    based on the structural inspection by micro-CT<br>修士論文：マイクロCTによる構造観察と数理モデルの構築から推定される魚類椎骨の形態形成メカニズム
+                </p>
+                <p>Fujimoto Lab, Osaka Univ. (大阪大学理学部理論生物学研究室), April 2012 - March
+                    2016<br>卒業研究：特徴的な形をした魚群の形成を個体の行動から理解する</p>
+                <h3>Publication</h3>
+                
+                <p>Misaki Sakashita, Mao Sato, Shigeru Kondo (2019) <br><a
+                        href="https://onlinelibrary.wiley.com/doi/full/10.1002/jmor.20983">Comparative morphological examination of vertebral bodies of teleost fish using high‐resolution micro‐CT scans</a><br>Journal of Morphology, John Wiley & Sons, Inc.</p>
+                
+                <p>Misaki Sakashita, Tsuguo Kondoh, Atsushi Kawamoto, Emmanuel Tromme, Shigeru Kondo (2018) <br><a
+                        href="https://www.asim-gi.org/fileadmin/user_upload_argesim/ARGESIM_Publications_OA/MATHMOD_Publications_OA/MATHMOD_2018_AR55/articles/a55241.arep.55.pdf">Biologically Inspired Topology Optimization Model with a Local Density Penalization.</a><br>MATHMOD 2018 Extended Abstract Volume​, ARGESIM Publisher, ARGESIM Report 55, pp59–60.</p>
+                
+                <h3>Book</h3>
+                <p>坂下美咲，近藤滋，動物学の百科事典第６章動物の発生「生物の形態形成と反応拡散系」, 丸善出版, 2018年9月刊行</p>
+                <h3>Awards</h3>
+                <p>第39回日本骨形態計測学会学術奨励賞</p>
+                <h3>Seminar/Talk</h3>
+                <p>坂下美咲，”<a
+                        href="https://www.es.hokudai.ac.jp/news/2019-11-18-mmc104/">トポロジー最適化を用いた魚類椎骨の形態形成メカニズムの数理モデル化</a>”，第104回北大MMCセミナー，北海道大学電子科学研究所，2019年11月
+                </p>
+                <h3>International Conference</h3>
+                
+                <p>Misaki Sakashita, Tsuguo Kondoh, Atsushi Kawamoto, Emmanuel Tromme, Mao Sato, Shigeru Kondo, Modelling the force-dependent morphogenesis of fish vertebra with topology optimization, 2018 Annual Meeting of the Society for Mathematical Biology & the Japanese Society for Mathematical Biology, Sydney Australia, July 2018 (Oral)</p>
+                
+                <p>Misaki Sakashita, Tsuguo Kondoh, Atsushi Kawamoto, Emmanuel Tromme, Shigeru Kondo, "Biologically Inspired Topology Optimization Model with a Local Density Penalization", Mathematical Modelling - 9th MATHMOD 2018, ThEPL.30, Vienna Austria, February 2018 (Poster)</p>
+                
+                <h3>Domestic Conference</h3>
+                
+                <p>坂下美咲，山﨑慎太郎，矢地謙太郎，近藤滋，”トポロジー最適化を用いた数理モデルによる魚類椎骨の多様な形態の再現”，第29回設計工学・システム部門講演会，2108，東北大学片平キャンパス，2019年9月（口頭）</p>
+                
+                <p>坂下美咲，山﨑慎太郎，矢地謙太郎，近藤滋，”トポロジー最適化を用いて魚類椎骨の異なる形態を外力に基づき説明する”，2019年度日本数理生物学会年会，O-13，東京工業大学大岡山キャンパス，2019年9月（口頭）</p>
+                
+                <p>坂下美咲，佐藤真央，山﨑慎太郎，矢地謙太郎，近藤滋，”魚類椎骨のマイクロCTを用いた観察に基づく形態形成メカニズムの数理モデル化”，第39回骨形態計測学会，Ⅶ-2，北九州国際会議場，2019年7月（口頭）</p>
+                
+                <p>坂下美咲，山﨑慎太郎，矢地謙太郎，近藤滋，“マイクロCTによる構造観察とトポロジー最適化に基づいた魚類椎骨の形態を形成する数理モデル”，計算工学講演会，D-09-03，大宮ソニックシティ，2019年5月（口頭）</p>
+                
+                <p>Misaki Sakashita，“Mathematical modeling of the formation of fish vertebrae (魚類椎骨の形態形成の数理モデル化)”，FBS Retreat 2019，淡路夢舞台，2019年5月（ポスター）</p>
+                
+                <p>Misaki Sakashita，“Pattern Formation in 2D/3D (2次元・3次元のパターン形成)”，FBS Retreat 2019，淡路夢舞台，2019年5月（口頭，英語）</p>
+                
+                <p>坂下美咲，近藤継男，川本敦史，山﨑慎太郎，矢地謙太郎，Emmanuel Tromme，佐藤真央，近藤滋，“トポロジー最適化を用いて魚類椎骨の形態を再現する数理モデルの構築”，日本機械学会第28回設計工学・システム部門講演会，2315，読谷村文化センター，2018年11月（口頭）</p>
+                
+                <p>坂下美咲，佐藤真央，近藤滋，“魚類椎骨のマイクロCTを用いた比較形態観察による形態形成メカニズムの推定”，2018年度日本魚類学会年会，101，国立オリンピック記念青少年総合センター，2018年10月（ポスター）</p>
+                
+                <p>Misaki Sakashita, Tsuguo Kondoh, Atsushi Kawamoto, Emmanuel Tromme, Mao Sato, Shigeru Kondo, “Modeling the force-associated morphogenesis of fish vertebra”, CREST「生命動態の理解と制御のための基盤技術の創出」第6回領域会議，OIST，2017年11月（ポスター）</p>
+                
+                <p>坂下美咲，佐藤真央，近藤滋，“魚類脊椎骨の３次元形態形成の研究”，日本動物学会第88回富山大会，P099，富山県民会館，2017年9月（ポスター）</p>
+                
+                <p>坂下美咲，近藤滋，“魚類の椎骨側部にある梁状構造ができる原理”，第37回日本骨形態計測学会，Ⅵ-1，大阪国際会議場，2017年6月（口頭）</p>
+                
+                <h3>Other Presentation</h3>
+                <p>トポロジー最適化を用いた魚類椎骨の形態再現，藤本研10周年同窓会，2018年11月（口頭）</p>
+                <p>生物学とプログラミング，第3回CAMPHOR-×KMC合同LT大会，2017年10月（口頭）</p>
+                <h2 id="engineering">ENGINEERING</h2>
+                <h3>Products</h3>
+                <div class="row">
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Fish vertebrae exhibition</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/fish_vertebrae_exhibition.png">
+                            </div>
+                            <div class="card-content">
+                                <p>Web application showing the 3D mesh of the vertebral body of teleost fish. Made using WebGL in 2019.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="https://fish-vertebrae-exhibition.firebaseapp.com/">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">instant translation</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/instant-translation.png">
+                            </div>
+                            <div class="card-content">
+                                <p>Command line tool translates a single word or sentence between Japanese and English. Made by Python in 2017.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="https://github.com/marty958/instant-translation">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Lab. of Pattern Formation website</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/lab_website.png">
+                            </div>
+                            <div class="card-content">
+                                <p>Website of Lab. of Pattern Formation, Osaka Univ. Made by HTML5/CSS3 (Bootstrap) in 2017.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="http://www.fbs.osaka-u.ac.jp/labs/skondo/">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">DLA model</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/dla.png">
+                            </div>
+                            <div class="card-content">
+                                <p>Diffusion-limited aggregation (DLA) model is a mathematical model that makes a branched pattern. Made by Processing in 2017.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="http://skstmrty.hatenablog.com/entry/make-dla">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Twitter bot</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/Noimage.png">
+                            </div>
+                            <div class="card-content">
+                                <p>Twitter bot tweets my music playlists. Made by Python in 2016.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="http://skstmrty.hatenablog.com/entry/make-twitter-bot">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <h3>Work Experience</h3>
+                <p><a href="https://www.tytlabs.com/">TOYOTA CENTRAL R&D LABS., INC.</a>, summer internship, August 2017
+                    - September 2017</p>
+                <p><a href="http://robotscool.com/jp/">ROBOTSCOOL JAPAN</a>, chief teacher, March 2013 - March 2016</p>
+                <!-- <h2>DESIGN</h2> -->
+                <!-- <h3>Product</h3> -->
+                <h2 id="illustration">ILLUSTRATION</h2>
+                <h3>Products</h3>
+                <div class="row">
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">CAMPHOR- 追いコンマグカップ</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/camphor_mag.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>Mag for the graduates of CAMPHOR-. Made by Affinity Designer in 2019.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="https://camph.net/">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">パターン形成研究室のノベルティグッズ</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/PFLpattern.png">
+                            </div>
+                            <div class="card-content">
+                                <p>Items with the research subject (animal skin pattern) of Lab. of Pattern Formation. Made by Affinity Designer in 2019.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="./LabsNovelty.html">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">New Year Card 2019</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/newyearcard2019.png">
+                            </div>
+                            <div class="card-content">
+                                <p>An illustration for New Year's Day in 2019. Made by Affinity Designer in 2019.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href=".">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">CAMPHOR- もくもく会ロゴ</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/mokumoku.png">
+                            </div>
+                            <div class="card-content">
+                                <p>Logotype for the event "もくもく会" by CAMPHOR-. Made by Affinity Designer in 2018.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="https://camphor.connpass.com/">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">大阪大学全学教育推進機構のイメージキャラクター</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/celas-kun-study.png">
+                            </div>
+                            <div class="card-content">
+                                <p>Mascot of the Center for Education in Liberal Arts and Sciences (CELAS) in Osaka Univ. We informally call him "celas-kun (セラスくん)." Made by Photoshop in 2016.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="http://www.celas.osaka-u.ac.jp/copyright/">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">LINEスタンプ ミサラビット</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/misarabbit.png">
+                            </div>
+                            <div class="card-content">
+                                <p>Line stickers of my mascot misarabbit (ミサラビット). Made by Photoshop in 2015. Please buy them!</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="https://store.line.me/stickershop/product/1245773/ja">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6 xl6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">大阪大学混声合唱フロイントコール 新歓CDジャケット</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/cdjacket.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>Hand-painted illustration for the cover art of the CD provided in the freshman welcome concert of FreundChor (the chorus club of Osaka Univ. ). Made in 2013.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="btn grey waves-effect waves-light z-depth-0" href="http://sound.jp/freund/index.html">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <h2 id="links">LINKS</h2>
+                <h3>Contact me:)</h3>
+                <div class="icon-container">
+                    
+                    <a class="btn-floating btn-large waves-effect waves-light red" href="mailto:sakashitamsk@gmail.com"><i
+                            class="fas fa-envelope"></i></a>
+                    
+                    <a class="btn-floating btn-large waves-effect waves-light light-blue" href="https://twitter.com/marty1martie"><i
+                            class="fab fa-twitter fa-2x"></i></a>
+                    
+                    <a class="btn-floating btn-large waves-effect waves-light indigo" href="https://www.facebook.com/misaki.sakashita.129?ref=bookmarks"><i
+                            class="fab fa-facebook fa-2x"></i></a>
+                    
+                    <a class="btn-floating btn-large waves-effect waves-light orange darken-2" href="http://skstmrty.hatenablog.com/"><i
+                            class="fas fa-rss fa-2x"></i></a>
+                    
+                    <a class="btn-floating btn-large waves-effect waves-light grey darken-4" href="https://github.com/marty958"><i
+                            class="fab fa-github fa-2x"></i></a>
+                    
+                    <a class="btn-floating btn-large waves-effect waves-light light-blue darken-3" href="https://www.slideshare.net/skstmsk?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview"><i
+                            class="fab fa-slideshare fa-2x"></i></a>
+                    
+                    <a class="btn-floating btn-large waves-effect waves-light teal accent-4" href="https://www.researchgate.net/profile/Misaki_Sakashita"><i
+                            class="fab fa-researchgate"></i></a>
+                    
+                </div>
+    </div>
+    <footer>&copy; 2019 Misaki Sakashita</footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
 </html>
