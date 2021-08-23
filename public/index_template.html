@@ -66,104 +66,108 @@
             </a>
         </div>
         <h2 id="research">RESEARCH</h2>
+        <h3>2021年以降の業績は<a href="https://www.tus.ac.jp/academics/teacher/p/index.php?744D">こちら</a>．</h3>
         <h3>Education</h3>
-        <p>JSPS DC2 (日本学術振興会特別研究員DC2), April 2019 - March 2021<p>
-                <p><a href="https://www.shoshisha.or.jp/">公益財団法人尚志社</a>奨学生, April 2016 - March 2019<p>
-                        <p>Laboratory of Pattern Formation (Kondo Lab), Osaka Univ. <br>(大阪大学大学院生命機能研究科パターン形成研究室), April
-                            2016 -
-                            Current<br>My master's thesis: Mathematical modeling to explain the formation of fish
-                            vertebra shape
-                            based on the structural inspection by
-                            micro-CT<br>修士論文：マイクロCTによる構造観察と数理モデルの構築から推定される魚類椎骨の形態形成メカニズム
-                        </p>
-                        <p>Fujimoto Lab, Osaka Univ. (大阪大学理学部理論生物学研究室), April 2012 - March
-                            2016<br>卒業研究：特徴的な形をした魚群の形成を個体の行動から理解する</p>
-                        <h3>Publication</h3>
-                        {% for paper in research_pub_list %}
-                        <p>{{ paper.author }} ({{ paper.year }}) <br><a
-                                href="{{ paper.link }}">{{ paper.title }}</a><br>{{ paper.journal }}</p>
-                        {% endfor %}
-                        <h3>Book</h3>
-                        <p>坂下美咲，近藤滋，動物学の百科事典第６章動物の発生「生物の形態形成と反応拡散系」, 丸善出版, 2018年9月刊行</p>
-                        <h3>Awards</h3>
-                        <p>第39回日本骨形態計測学会学術奨励賞</p>
-                        <h3>Seminar/Talk</h3>
-                        <p>坂下美咲，”<a
-                                href="https://www.es.hokudai.ac.jp/news/2019-11-18-mmc104/">トポロジー最適化を用いた魚類椎骨の形態形成メカニズムの数理モデル化</a>”，第104回北大MMCセミナー，北海道大学電子科学研究所，2019年11月
-                        </p>
-                        <h3>International Conference</h3>
-                        {% for conference in research_conf_list %}
-                        <p>{{ conference.info }} ({{ conference.style }})</p>
-                        {% endfor %}
-                        <h3>Domestic Conference</h3>
-                        {% for gakkai in research_gakkai_list %}
-                        <p>{{ gakkai.info }}（{{ gakkai.style }}）</p>
-                        {% endfor %}
-                        <h3>Other Presentation</h3>
-                        <p>トポロジー最適化を用いた魚類椎骨の形態再現，藤本研10周年同窓会，2018年11月（口頭）</p>
-                        <p>生物学とプログラミング，第3回CAMPHOR-×KMC合同LT大会，2017年10月（口頭）</p>
-                        <h2 id="engineering">ENGINEERING</h2>
-                        <h3>Products</h3>
-                        <div class="row">
-                            {% for product in eng_products_list %}
-                            <div class="col s12 m6 l6 xl6">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <span class="card-title">{{ product.name }}</span>
-                                    </div>
-                                    <div class="image-container">
-                                        <img src="{{ product.image }}">
-                                    </div>
-                                    <div class="card-content">
-                                        <p>{{ product.description }}</p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a class="btn grey waves-effect waves-light z-depth-0"
-                                            href="{{ product.url }}">MORE</a>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                        <h3>Work Experience</h3>
-                        <p><a href="https://www.tytlabs.com/">TOYOTA CENTRAL R&D LABS., INC.</a>, summer internship,
-                            August 2017
-                            - September 2017</p>
-                        <p><a href="http://robotscool.com/jp/">ROBOTSCOOL JAPAN</a>, chief teacher, March 2013 - March
-                            2016</p>
-                        <!-- <h2>DESIGN</h2> -->
-                        <!-- <h3>Product</h3> -->
-                        <h2 id="illustration">ILLUSTRATION</h2>
-                        <h3>Products</h3>
-                        <div class="row">
-                            {% for product in design_products_list %}
-                            <div class="col s12 m6 l6 xl6">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <span class="card-title">{{ product.name }}</span>
-                                    </div>
-                                    <div class="image-container">
-                                        <img src="{{ product.image }}">
-                                    </div>
-                                    <div class="card-content">
-                                        <p>{{ product.description }}</p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a class="btn grey waves-effect waves-light z-depth-0"
-                                            href="{{ product.url }}">MORE</a>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                        <h2 id="links">LINKS</h2>
-                        <h3>Contact me:)</h3>
-                        <div class="icon-container">
-                            {% for link in link_list %}
-                            <a class="btn-floating btn-large waves-effect waves-light {{ link.color}}"
-                                href="{{ link.link }}"><i class="{{ link.font }}"></i></a>
-                            {% endfor %}
-                        </div>
+        <p>JSPS DC2 (日本学術振興会特別研究員DC2), April 2019 - March 2021
+        <p>
+        <p><a href="https://www.shoshisha.or.jp/">公益財団法人尚志社</a>奨学生, April 2016 - March 2019
+        <p>
+        <p>Laboratory of Pattern Formation (Kondo Lab), Osaka Univ. <br>(大阪大学大学院生命機能研究科パターン形成研究室), April
+            2016 -
+            Current<br>My master's thesis: Mathematical modeling to explain the formation of fish
+            vertebra shape
+            based on the structural inspection by
+            micro-CT<br>修士論文：マイクロCTによる構造観察と数理モデルの構築から推定される魚類椎骨の形態形成メカニズム
+        </p>
+        <p>Fujimoto Lab, Osaka Univ. (大阪大学理学部理論生物学研究室), April 2012 - March
+            2016<br>卒業研究：特徴的な形をした魚群の形成を個体の行動から理解する</p>
+        <h3>Publication</h3>
+        {% for paper in research_pub_list %}
+        <p>{{ paper.author }} ({{ paper.year }}) <br><a href="{{ paper.link }}">{{ paper.title }}</a><br>{{
+            paper.journal }}</p>
+        {% endfor %}
+        <h3>Book</h3>
+        <p>坂下美咲，近藤滋，<a
+                href="https://www.maruzen-publishing.co.jp/item/b302768.html">動物学の百科事典</a>第６章動物の発生「生物の形態形成と反応拡散系」, 丸善出版,
+            2018年9月刊行</p>
+        <h3>Awards</h3>
+        <p>第50回リバネス研究費incu・be賞奨励賞</p>
+        <p>第39回日本骨形態計測学会学術奨励賞</p>
+        <h3>Seminar/Talk</h3>
+        <p>坂下美咲，”<a
+                href="https://www.es.hokudai.ac.jp/news/2019-11-18-mmc104/">トポロジー最適化を用いた魚類椎骨の形態形成メカニズムの数理モデル化</a>”，第104回北大MMCセミナー，北海道大学電子科学研究所，2019年11月
+        </p>
+        <h3>International Conference</h3>
+        {% for conference in research_conf_list %}
+        <p>{{ conference.info }} ({{ conference.style }})</p>
+        {% endfor %}
+        <h3>Domestic Conference</h3>
+        {% for gakkai in research_gakkai_list %}
+        <p>{{ gakkai.info }}（{{ gakkai.style }}）</p>
+        {% endfor %}
+        <h3>Other Presentation</h3>
+        <p>トポロジー最適化を用いた魚類椎骨の形態再現，藤本研10周年同窓会，2018年11月（口頭）</p>
+        <p>生物学とプログラミング，第3回CAMPHOR-×KMC合同LT大会，2017年10月（口頭）</p>
+        <h2 id="engineering">ENGINEERING</h2>
+        <h3>Products</h3>
+        <div class="row">
+            {% for product in eng_products_list %}
+            <div class="col s12 m6 l6 xl6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">{{ product.name }}</span>
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ product.image }}">
+                    </div>
+                    <div class="card-content">
+                        <p>{{ product.description }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn grey waves-effect waves-light z-depth-0" href="{{ product.url }}">MORE</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <h3>Work Experience</h3>
+        <p><a href="https://www.tytlabs.com/">TOYOTA CENTRAL R&D LABS., INC.</a>, summer internship,
+            August 2017
+            - September 2017</p>
+        <p><a href="http://robotscool.com/jp/">ROBOTSCOOL JAPAN</a>, chief teacher, March 2013 - March
+            2016</p>
+        <!-- <h2>DESIGN</h2> -->
+        <!-- <h3>Product</h3> -->
+        <h2 id="illustration">ILLUSTRATION</h2>
+        <h3>Products</h3>
+        <div class="row">
+            {% for product in design_products_list %}
+            <div class="col s12 m6 l6 xl6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">{{ product.name }}</span>
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ product.image }}">
+                    </div>
+                    <div class="card-content">
+                        <p>{{ product.description }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="btn grey waves-effect waves-light z-depth-0" href="{{ product.url }}">MORE</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <h2 id="links">LINKS</h2>
+        <h3>Contact me:)</h3>
+        <div class="icon-container">
+            {% for link in link_list %}
+            <a class="btn-floating btn-large waves-effect waves-light {{ link.color}}" href="{{ link.link }}"><i
+                    class="{{ link.font }}"></i></a>
+            {% endfor %}
+        </div>
     </div>
     <footer>&copy; 2019 Misaki Sakashita</footer>
     <!--JavaScript at end of body for optimized loading-->
